@@ -5,13 +5,15 @@ function App() {
   return (
     <div className="wrapper">
       <header>
+        <div className='headerLeft'>
         <svg/>
-        <div>
+        <div className='headerInfo'>
           <h3>React Sneakers</h3>
           <p> 
-            Mагазин лучших красовок
+            Mагазин лучших кросовок
           </p>
-          <ul>
+          </div>
+          <ul className='headerRight'>
             <li>
               <svg/>
               <span>1250 grn</span>
@@ -20,6 +22,9 @@ function App() {
           </ul>
         </div>
       </header>
+      <div className="content">
+        
+      </div>
    
     </div>
   );
