@@ -32,7 +32,8 @@ function App() {
             <img  className='removeBtn'src="/img/btn-remove.svg" alt="remove" />
         </div>
         <div className="items">
-          <ul className='cartTotalBlock'>
+          <div className="cartTotalBlock">
+          <ul>
             <li className='d-flex'>
               <span>Итого:</span>
               <div></div>
@@ -44,7 +45,9 @@ function App() {
               <b>1074grn</b>
             </li>
           </ul>
-          <button></button>
+          <button>Оформить заказ</button>
+          </div>
+       
         </div>
        </div>
       </div>
