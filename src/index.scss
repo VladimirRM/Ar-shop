@@ -173,6 +173,22 @@ content{
     border: 1px dashed #dfdfdf;
   }
 button{
+  .greenButton{
+    position: relative;
+    img{
+    position: absolute;
+     right: 30px;
+     top:10px;
+    }
+
+  }
+}
+}
+.greenButton{
+
+  svg{
+    margin-left: 20px;
+  }
   width: 100%;
   height: 55px;
   background: #9dd558;
@@ -181,11 +197,12 @@ button{
   color :#dfdfdf;
   font-size: 16px;
   font-weight: 500px;
+  cursor: pointer;
+  transition:  0.2s ease-in-out;
 
   &:hover{
      background: #3b4a25;
   }
 
-}
 }
 
