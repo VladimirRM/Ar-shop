@@ -13,7 +13,7 @@ function App() {
           <h3 className=' text-uppercase' >React Sneakers</h3>
           <p className='opacity-5'> 
             Mагазин лучших кросовок
-          </p>
+          </p>y
           </div>
           <ul className='d-flex'>
             <li  className='mr-30'>
@@ -28,9 +28,9 @@ function App() {
         </div>
       </header>
       <div className="content p-40">
-        <div>
-        <h1 className='mb-40'>Все кроссовки</h1>
-           <div className="search-block">
+        <div className='d-flex  aline-center mb-40 justify-between'>
+        <h1 >Все кроссовки</h1>
+           <div className="search-block d-flex">
             <img src="/img/search.svg" alt="Search" />
             <input type="text"  placeholder='Поиск...' />
            </div>
