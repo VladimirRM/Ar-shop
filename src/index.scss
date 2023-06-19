@@ -99,6 +99,8 @@ content{
 }
 .drawer{
   position: absolute;
+  display: flex;
+  flex-direction: column;
  width: 385px;
  right: 0;
  height: 100%;
@@ -143,6 +145,26 @@ content{
     transition: opacity 0.2s easy-in-out;
     cursor: pointer;
     opacity: 1;
+  }
+}
+.cardItemImg{
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  background-position: center;
+}
+.cartTotalBlock{
+  li{
+    display: flex;
+    align-items: flex-end ;
+    position: relative;
+    top: -4px;
+    margin: 0 7px;
+  }
+  div{
+    flex:1;
+    height: 1px;
+    border: 1px dashed #dfdfdf;
   }
 }
 

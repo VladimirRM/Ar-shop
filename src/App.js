@@ -7,18 +7,44 @@ function App() {
     <div className="wrapper clear">
       <div className="overlay">
       <div className="drawer">
-        <h2>Корзина</h2>
+        <h2 className='mb-30'>Корзина</h2>
+        
 
 
-        <div className="cartItem d-flex aline-center" >
+        <div className="cartItem d-flex aline-center mb-20" >
           <img  className='mr-20'  height={70}  width={70} src="/img/1.jpeg" alt="Sneakers" />
-          <div className="cartItemImg"></div>
+          <div  style={{backgroundImage:'url(/img/1.jpeg)'}}className="cartItemImg"></div>
 
           <div className='mr-20'>
             <p className='mb-5'>Мужские Кроссовки Nike Blazer Mid Suede</p>
             <b>12 999grn</b>
           </div>
             <img  className='removeBtn'src="/img/btn-remove.svg" alt="remove" />
+        </div>
+        <div className="cartItem d-flex aline-center" >
+          <img  className='mr-20'  height={70}  width={70} src="/img/1.jpeg" alt="Sneakers" />
+          <div  style={{backgroundImage:'url(/img/1.jpeg)'}}className="cartItemImg"></div>
+
+          <div className='mr-20'>
+            <p className='mb-5'>Мужские Кроссовки Nike Blazer Mid Suede</p>
+            <b>12 999grn</b>
+          </div>
+            <img  className='removeBtn'src="/img/btn-remove.svg" alt="remove" />
+        </div>
+        <div className="items">
+          <ul className='cartTotalBlock'>
+            <li className='d-flex'>
+              <span>Итого:</span>
+              <div></div>
+              <b>21 334grn</b>
+           </li>
+            <li className='d-flex'>
+              <span>Налог 5%</span>
+              <div></div>
+              <b>1074grn</b>
+            </li>
+          </ul>
+          <button></button>
         </div>
        </div>
       </div>
