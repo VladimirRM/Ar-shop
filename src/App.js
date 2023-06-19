@@ -5,7 +5,24 @@ import './index.scss'
 function App() {
   return (
     <div className="wrapper clear">
-      <div className="drawer"></div>
+      <div className="overlay">
+      <div className="drawer">
+        <h2>Корзина</h2>
+
+
+        <div className="cartItem d-flex aline-center" >
+          <img  className='mr-20'  height={70}  width={70} src="/img/1.jpeg" alt="Sneakers" />
+          <div className="cartItemImg"></div>
+
+          <div className='mr-20'>
+            <p className='mb-5'>Мужские Кроссовки Nike Blazer Mid Suede</p>
+            <b>12 999grn</b>
+          </div>
+            <img  className='removeBtn'src="/img/btn-remove.svg" alt="remove" />
+        </div>
+       </div>
+      </div>
+      
       <header className='d-flex justify-between aline-center p-40' >
         <div className='d-flex aline-center'>
           <img  width={40} height={40} src='/img/logo.png'/>
