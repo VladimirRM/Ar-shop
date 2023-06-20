@@ -1,6 +1,7 @@
 
 import './App.css';
 import './index.scss'
+import Card from './Components/Card';
 
 function App() {
   return (
@@ -9,9 +10,6 @@ function App() {
       <div className="drawer">
         <img  className='removeBtn cartItem d-flex ' src="/img/btn-remove.svg" alt="remove" />
         <h2 className='mb-30 d-flex justify-between'>Корзина</h2>
-
-        
-
 
         <div className=" mb-20" >
           <img  className='mr-20'  height={70}  width={70} src="/img/1.jpeg" alt="Sneakers" />
@@ -85,23 +83,7 @@ function App() {
            </div>
         </div>
         <div className='d-flex'>
-        <div className="card">
-          <div className='favorite'>
-          <img src="/img/heart-unliked.svg" alt="Unliked" />
-
-          </div>
-          <img  width={133}height={112} src="/img/1.jpeg" alt="Sneakers" />
-          <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
-          <div className='d-flex justify-between aline-center'>
-            <div className='d-flex  flex-column '>
-              <span>Price</span>
-              <b>12 999grn</b>
-            </div>
-            <button className='button'>
-              <img   width={11}  height={11}  src="/img/plus.svg" alt="" />
-            </button>
-          </div>
-        </div>
+      
         <div className="card">
           <img  width={133}height={112} src="/img/2.jpeg" alt="Sneakers" />
           <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
@@ -142,6 +124,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Card/>
       </div>
     </div>
   );
