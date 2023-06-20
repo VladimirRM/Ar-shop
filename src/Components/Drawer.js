@@ -2,7 +2,9 @@ import React from 'react'
 
 const Drawer = () => {
   return (
-    <div>
+
+      <div  style={{display: 'none'}}className="overlay">
+
       <div className="drawer">
         <img  className='removeBtn cartItem d-flex ' src="/img/btn-remove.svg" alt="remove" />
         <h2 className='mb-30 d-flex justify-between'>Корзина</h2>
