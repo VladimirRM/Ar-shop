@@ -109,10 +109,14 @@ content{
  padding: 30px;
 
  h2{
+
   margin: 0;
   font-size: 24px;
  }
-
+ .items{
+  //  overflow: auto;
+  //  margin-bottom: 50px;
+ }
 
 }
 .overlay{
