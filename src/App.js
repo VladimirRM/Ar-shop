@@ -2,78 +2,16 @@
 import './App.css';
 import './index.scss'
 import Card from './Components/Card';
+import Headers from './Components/Headers';
 
 function App() {
   return (
     <div className="wrapper clear">
+      <Headers/>
       <div  style={{display: 'none'}}className="overlay">
-      <div className="drawer">
-        <img  className='removeBtn cartItem d-flex ' src="/img/btn-remove.svg" alt="remove" />
-        <h2 className='mb-30 d-flex justify-between'>Корзина</h2>
-
-        <div className=" mb-20" >
-          <img  className='mr-20'  height={70}  width={70} src="/img/1.jpeg" alt="Sneakers" />
-          <div  style={{backgroundImage:'url(/img/1.jpeg)'}}className="cartItemImg"></div>
-
-          <div className='mr-20'>
-            <p className='mb-5'>Мужские Кроссовки Nike Blazer Mid Suede</p>
-            <b>12 999grn</b>
-          </div>
-            <img  className='removeBtn'src="/img/btn-remove.svg" alt="remove" />
-        </div>
-        <div className="cartItem d-flex aline-center" >
-          <img  className='mr-20'  height={70}  width={70} src="/img/1.jpeg" alt="Sneakers" />
-          <div  style={{backgroundImage:'url(/img/1.jpeg)'}}className="cartItemImg"></div>
-
-          <div className='mr-20'>
-            <p className='mb-5'>Мужские Кроссовки Nike Blazer Mid Suede</p>
-            <b>12 999grn</b>
-          </div>
-            <img  className='removeBtn'src="/img/btn-remove.svg" alt="remove" />
-        </div>
-        <div className="items">
-          <div className="cartTotalBlock">
-          <ul>
-            <li className='d-flex'>
-              <span>Итого:</span>
-              <div></div>
-              <b>21 334grn</b>
-           </li>
-            <li className='d-flex'>
-              <span>Налог 5%</span>
-              <div></div>
-              <b>1074grn</b>
-            </li>
-          </ul>
-          <button className='greenButton'>Оформить заказ<img src='/img/arrow.svg'  alt='Arrow'/></button>
-          </div>
-       
-        </div>
-       </div>
-      </div>
       
-      <header className='d-flex justify-between aline-center p-40' >
-        <div className='d-flex aline-center'>
-          <img  width={40} height={40} src='/img/logo.png'/>
-        <svg/>
-        <div className='headerInfo'>
-          <h3 className=' text-uppercase' >React Sneakers</h3>
-          <p className='opacity-5'> 
-            Mагазин лучших кросовок
-          </p>y
-          </div>
-          <ul className='d-flex'>
-            <li  className='mr-30'>
-              <img width={18}  height={18} src='/img/cart.svg'/>
-              <span>1250 grn</span>
-              <svg/>
-            </li>
-            <li>
-              <img  width='18' height={18} src='/img/user.svg'/>
-            </li>
-          </ul>
-        </div>
-      </header>
+      
+  
       <div className="content p-40">
         <div className='d-flex  aline-center mb-40 justify-between'>
         <h1 >Все кроссовки</h1>
@@ -127,6 +65,8 @@ function App() {
       <Card/>
       </div>
     </div>
+    </div>
+
   );
 }
 
