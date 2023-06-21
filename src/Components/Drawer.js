@@ -1,9 +1,10 @@
 import React from 'react'
+import '../index.scss'
 
 const Drawer = () => {
   return (
 
-      <div  style={{display: 'none'}}className="overlay">
+      <div   className="overlay">
 
       <div className="drawer">
         <img  className='removeBtn cartItem d-flex ' src="/img/btn-remove.svg" alt="remove" />
@@ -13,7 +14,7 @@ const Drawer = () => {
           <img  className='mr-20'  height={70}  width={70} src="/img/1.jpeg" alt="Sneakers" />
           <div  style={{backgroundImage:'url(/img/1.jpeg)'}}className="cartItemImg"></div>
 
-          <div className='mr-20'>
+          <div className='mr-20 cu-p'>
             <p className='mb-5'>Мужские Кроссовки Nike Blazer Mid Suede</p>
             <b>12 999grn</b>
           </div>

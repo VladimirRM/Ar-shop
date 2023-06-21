@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import './index.scss'
 import Card from './Components/Card/Card';
@@ -16,10 +16,13 @@ const arr = [
 function App() {
 
 
+  const [cartOpened, setCartOpened]  = React.useState(false)
+
+
   return (
     <div className="wrapper clear">
-      <Headers/>
-      <Drawer/>
+     {cartOpened ? <Drawer/> : null} 
+      <Headers onClickCart={()=>setCartOpened(true)}/>
       
   
       <div className="content p-40">

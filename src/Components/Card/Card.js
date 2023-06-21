@@ -9,6 +9,10 @@ const Card = (props) => {
       setIsAdded(!isAdded)
  }
 
+ React.useEffect(()=>{
+    console.log('change')
+ },[isAdded])
+
   return (
     <div>
       <div className={styles.card}>

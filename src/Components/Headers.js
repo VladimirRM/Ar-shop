@@ -14,7 +14,7 @@ const Headers = () => {
           </p>y
           </div>
           <ul className='d-flex'>
-            <li  className='mr-30'>
+            <li  className='mr-30 '>
               <img width={18}  height={18} src='/img/cart.svg'/>
               <span>1250 grn</span>
               <svg/>
