@@ -1,7 +1,11 @@
 import React from 'react'
 
 const Card = (props) => {
-    console.log(props. imageUrl)
+
+ const onClickButton = ()=>{
+
+ }
+
   return (
     <div>
       <div className="card">
@@ -17,7 +21,8 @@ const Card = (props) => {
     <b>{props.price}</b>
   </div>
   <button className='button'>
-    <img   width={11}  height={11}  src="/img/plus.svg" alt="" />
+    <img   width={11}  height={11}  src="/img/plus.svg" alt="" 
+    onClick={onClickButton}/>
   </button>
 </div>
 </div>
