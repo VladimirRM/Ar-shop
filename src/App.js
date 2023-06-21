@@ -1,7 +1,7 @@
 
 import './App.css';
 import './index.scss'
-import Card from './Components/Card';
+import Card from './Components/Card/Card';
 import Headers from './Components/Headers';
 import Drawer from './Components/Drawer';
 
@@ -36,6 +36,8 @@ function App() {
         title={obj.name}
         price={obj.price}
         imageUrl={obj.imageUrl}
+        onFavorite={()=>console.log('you clicked favorite')}
+        onPlus={()=>console.log('you clicked plus')}
         />
 
           ))}
