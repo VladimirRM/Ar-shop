@@ -7,8 +7,8 @@ const Drawer = (props) => {
       <div   className="overlay">
 
       <div className="drawer">
-        <img  onClick={props.onClose} className='removeBtn cartItem d-flex ' src="/img/btn-remove.svg" alt="close" />
-        <h2 className='mb-30 d-flex justify-between'>Корзина</h2>
+        <img  onClick={props.onClose} className='removeBtn cartItem  ' src="/img/btn-remove.svg" alt="close" />
+        <h2 className='mb-30  justify-between'>Корзина</h2>
 
         <div className=" mb-20" >
           <img  className='mr-20'  height={70}  width={70} src="/img/1.jpeg" alt="Sneakers" />
