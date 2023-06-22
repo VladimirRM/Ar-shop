@@ -1,13 +1,13 @@
 import React from 'react'
 import '../index.scss'
 
-const Drawer = () => {
+const Drawer = (props) => {
   return (
 
       <div   className="overlay">
 
       <div className="drawer">
-        <img  className='removeBtn cartItem d-flex ' src="/img/btn-remove.svg" alt="remove" />
+        <img  onClick={props.onClose} className='removeBtn cartItem d-flex ' src="/img/btn-remove.svg" alt="close" />
         <h2 className='mb-30 d-flex justify-between'>Корзина</h2>
 
         <div className=" mb-20" >
