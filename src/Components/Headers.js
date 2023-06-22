@@ -12,7 +12,7 @@ const Headers = (props) => {
           <h3 className=' text-uppercase' >React Sneakers</h3>
           <p className='opacity-5'> 
             Mагазин лучших кросовок
-          </p>y
+          </p>
           </div>
           <ul className='d-flex'>
             <li onClick={props.onClickCart} className='mr-30 '>
