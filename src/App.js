@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios'
 import './App.css';
 import './index.scss'
 import Card from './Components/Card/Card';
@@ -27,6 +28,8 @@ function App() {
       .then(json => setItems(json))
 })
   },[])
+
+  axios.get('https://64933a8c428c3d2035d18864.mockapi.io/items')
 
   const onAddToCard = (obj)=>{
      setCartItems(prev =>[...prev,obj]) 
