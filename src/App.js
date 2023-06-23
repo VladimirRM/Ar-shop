@@ -17,6 +17,7 @@ function App() {
   const [items,setItems] = React.useState([])
   const [cartOpened, setCartOpened]  = React.useState(false)
   const [cartItems, setCartItems]  = React.useState([])
+  const [searchValue, setSearchValue]  = React.useState([])
 
   
 
@@ -27,9 +28,12 @@ function App() {
 })
   },[])
 
-  const onAddToCard = ()=>{
-    alert(123)
-}
+  const onAddToCard = (obj)=>{
+     setCartItems(prev =>[...prev,obj]) 
+     
+     console.log(cartItems)
+    }
+
 
 
   return (
@@ -47,13 +51,14 @@ function App() {
            </div>
         </div>
         <div className='d-flex flex-wrap'>
-          {items.map((obj)=>(
+          {items.map((item)=>(
         <Card
-        title={obj.name}
-        price={obj.price}
-        imageUrl={obj.imageUrl}
+        key={item.title}
+        title={item.title}
+        price={item.price}
+        imageUrl={item.imageUrl}
         onFavorite={()=>console.log('you clicked favorite')}
-        onPlus={onAddToCard}
+        onPlus={(obj)=>onAddToCard(obj)}
         />
 
           ))}

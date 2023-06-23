@@ -1,7 +1,7 @@
 import React from 'react'
 import '../index.scss'
 
-const Drawer = ({onClose,items}) => {
+const Drawer = ({onClose,items,imageUrl}) => {
   return (
 
       <div   className="overlay">

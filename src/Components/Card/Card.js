@@ -6,15 +6,9 @@ const Card = ({title,imageUrl,price,onFavorite,onPlus}) => {
   const [isAdded, setIsAdded] = React.useState(false)
 
  const onClickPlus = ()=>{
-      onPlus()
+      onPlus({title,imageUrl,price})
       setIsAdded(!isAdded)
  }
-
- React.useEffect(()=>{
-    console.log('change')
- },[isAdded])
-
-
 
   return (
     <div>
