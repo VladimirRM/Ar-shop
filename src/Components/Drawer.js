@@ -1,14 +1,14 @@
 import React from 'react'
 import '../index.scss'
 
-const Drawer = ({onClose,items,imageUrl}) => {
+const Drawer = ({onClose,items = []}) => {
   return (
 
       <div   className="overlay">
 
       <div className="drawer">
         <h2 className='mb-30  justify-between'>Корзина</h2>
-        <img  onClick={onClose} className='removeBtn cartItem p ' src="/img/btn-remove.svg" alt="close" />
+        <img   className=' clear removeBtn cartItem p ' src="/img/btn-remove.svg" alt="close" />
 
            <div className="items">
             {items.map((obj)=>(

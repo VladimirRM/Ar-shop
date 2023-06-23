@@ -17,7 +17,7 @@ function App() {
   const [items,setItems] = React.useState([])
   const [cartOpened, setCartOpened]  = React.useState(false)
   const [cartItems, setCartItems]  = React.useState([])
-  const [searchValue, setSearchValue]  = React.useState([])
+  const [searchValue, setSearchValue]  = React.useState('')
 
   
 
@@ -34,6 +34,11 @@ function App() {
      console.log(cartItems)
     }
 
+    const onChangeSearchInput = (event)=>{
+        console.log(event.target.value)
+        setSearchValue( event.target.value)
+    }
+
 
 
   return (
@@ -44,16 +49,17 @@ function App() {
   
       <div className="content p-40 ">
         <div className='d-flex  aline-center mb-40 justify-between'>
-        <h1 >Все кроссовки</h1>
+        <h1 >{searchValue? `Поиск по запросу:"${searchValue}"`: 'Все кросовки'}</h1>
            <div className="search-block d-flex">
             <img src="/img/search.svg" alt="Search" />
-            <input type="text"  placeholder='Поиск...' />
+            { searchValue && <img onClick={()=>setSearchValue('')} className='clear cu-p'src="/img/btn-remove.svg" alt="clear" />}
+            <input onChange={onChangeSearchInput} type="text" value={searchValue } placeholder='Поиск...' />
            </div>
         </div>
         <div className='d-flex flex-wrap'>
-          {items.map((item)=>(
+          {items.filter((item)=>item.title.toLowerCase().includes(searchValue)).map((item)=>(
         <Card
-        key={item.title}
+        key={item.price}
         title={item.title}
         price={item.price}
         imageUrl={item.imageUrl}
