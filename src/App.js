@@ -23,18 +23,31 @@ function App() {
   
 
   React.useEffect(()=>{
-    fetch('https://64933a8c428c3d2035d18864.mockapi.io/items').then((res) =>{
-      return res.json()
-      .then(json => setItems(json))
+   
+  axios.get('https://64933a8c428c3d2035d18864.mockapi.io/items').then((res) =>{
+    setItems(res.data)
+    axios.get('https://64933a8c428c3d2035d18864.mockapi.io/cart').then((res) =>{
+      setCartItems(res.data)
+  
+  })
+
 })
   },[])
 
-  axios.get('https://64933a8c428c3d2035d18864.mockapi.io/items')
 
   const onAddToCard = (obj)=>{
+
+    axios.post('https://64933a8c428c3d2035d18864.mockapi.io/cart',obj)
+
      setCartItems(prev =>[...prev,obj]) 
      
      console.log(cartItems)
+    }
+
+    const onRemoveItem = (id)=>{
+      axios.delete(`https://64933a8c428c3d2035d18864.mockapi.io/cart/${id}`)
+
+    //  setCartItems(prev =>[...prev,obj])      
     }
 
     const onChangeSearchInput = (event)=>{
