@@ -15,10 +15,14 @@ const Headers = (props) => {
           </p>
           </div>
           <ul className='d-flex'>
-            <li onClick={props.onClickCart} className='mr-30 '>
-              <img width={18}  height={18} src='/img/cart.svg'/>
+            <li onClick={props.onClickCart} className=' '>
+              <img width={18}  height={18} src='/img/cart.svg' alt='cart'/>
               <span>1250 grn</span>
               <svg/>
+            </li>
+            <li>
+            <img width={18}  height={18} src='/img/heart.svg' alt='fav'/>
+
             </li>
             <li>
               <img  width='18' height={18} src='/img/user.svg'/>
