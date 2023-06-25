@@ -18,6 +18,7 @@ function App() {
   const [items,setItems] = React.useState([])
   const [cartOpened, setCartOpened]  = React.useState(false)
   const [cartItems, setCartItems]  = React.useState([])
+  const [favorites, setFavorites]  = React.useState([])
   const [searchValue, setSearchValue]  = React.useState('')
 
   
@@ -43,7 +44,6 @@ function App() {
     }
 
     const onRemoveItem = (id)=>{
-      console.log(id)
       axios.delete(`https://64933a8c428c3d2035d18864.mockapi.io/cart/${id}`)
         setCartItems(prev =>prev.filter((item)=>item.id !==id))      
     }
