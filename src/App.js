@@ -4,6 +4,7 @@ import './App.css';
 import './index.scss'
 import Card from './Components/Card/Card';
 import Headers from './Components/Headers';
+import { Routes, Route } from "react-router-dom";
 import Drawer from './Components/Drawer';
 
 // const arr = [
